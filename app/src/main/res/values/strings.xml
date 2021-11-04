@@ -1,129 +1,49 @@
 <resources>
     <string name="app_name">Engineering_calculator</string>
+    <string name="enter_text">Enter you text</string>
 
-    <string name="x_2">
-        <![CDATA[<center>
-            <small>
-                x<small><sup>2</sup></small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="x_3">
-        <![CDATA[<center>
-            <small>
-                x<small><sup>3</sup></small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="x_y">
-        <![CDATA[<center>
-            <small>
-                x<small><sup>y</sup></small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="koren_2x">
-        <![CDATA[<center>
-            <small>
-                √x
-            </small>
-        </center>]]>
-    </string>
-    <string name="koren_3x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small><sup>3</sup></small>√x
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="exp_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    exp
-                </small>
-            </small>
-        </center>]]>
-    </string>
-
-    <string name="sin_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    sin
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="cos_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small>cos</small>
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="tan_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small>tg</small>
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="ctg_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small>ctg</small>
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="sec_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small>sec</small>
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="cosec_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small><small>cosec</small></small>
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="log10_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small><small>log<small><sub>10</sub></small>x</small></small>
-                </small>
-            </small>
-        </center>]]>
-    </string>
-    <string name="ln_x">
-        <![CDATA[<center>
-            <small>
-                <small>
-                    <small>ln</small>
-                </small>
-            </small>
-        </center>]]>
-    </string>
+    <string name="x_2">x^2</string>
+    <string name="x_3">x^3</string>
+    <string name="x_y">x^y</string>
+    <string name="sqrt_2x">√x</string>
+    <string name="sqrt_3x">3√x</string>
+    <string name="exp_x">exp</string>
+    <string name="sin_x">sin</string>
+    <string name="cos_x">cos</string>
+    <string name="tan_x">tan</string>
+    <string name="ctg_x">ctg</string>
+    <string name="sec_x">sec</string>
+    <string name="cosec_x">cosec</string>
+    <string name="log10_x">log</string>
+    <string name="ln_x">ln</string>
 
     <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="clear">C</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
 
-    <string name="del_one_str"><![CDATA[<]]></string>
+
+    <string name="num_0">0</string>
+    <string name="num_1">1</string>
+    <string name="num_2">2</string>
+    <string name="num_3">3</string>
+    <string name="num_4">4</string>
+    <string name="num_5">5</string>
+    <string name="num_6">6</string>
+    <string name="num_7">7</string>
+    <string name="num_8">8</string>
+    <string name="num_9">9</string>
+    <string name="btn_float">,</string>
+
+    <string name="btn_ac">AC</string>
+    <string name="btn_c">C</string>
+    <string name="btn_left">(</string>
+    <string name="btn_right">)</string>
+    <string name="btn_equal">=</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_sub">-</string>
+    <string name="btn_mul">*</string>
+    <string name="btn_dev">/</string>
+
+    <string name="del_one_str">C</string>
 </resources>

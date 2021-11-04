@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         ITOG.setOnClickListener(ClickITOG);
     }
 
+    @SuppressLint("WrongViewCast")
     private void ElementCreate(){
         //Кнопки чисел
 
@@ -77,19 +78,19 @@ public class MainActivity extends AppCompatActivity {
         //Кнопки простых операций
         plus_minus = findViewById(R.id.plus_minus);
         Point = findViewById(R.id.Point);
-        skobka_open = findViewById(R.id.skobka_open);
-        skobka_close = findViewById(R.id.skobka_close);
+        skobka_open = findViewById(R.id.left);
+        skobka_close = findViewById(R.id.right);
         plus = findViewById(R.id.plus);
         minus = findViewById(R.id.minus);
         mul = findViewById(R.id.mul);
         div = findViewById(R.id.div);
-        del = findViewById(R.id.del);
+        del = findViewById(R.id.ac);
         del_one = findViewById(R.id.del_one);
 
         /*---------Кнопки тригонометрии, возведения в степень, корня и логарифма---------*/
         //Первая панель
-        koren_2x = findViewById(R.id.koren_2x);
-        koren_3x = findViewById(R.id.koren_3x);
+        koren_2x = findViewById(R.id.sqrt_2x);
+        koren_3x = findViewById(R.id.sqrt_3x);
         exp_x = findViewById(R.id.exp_x);
         x_2 = findViewById(R.id.x_2);
         x_3 = findViewById(R.id.x_3);
@@ -106,15 +107,15 @@ public class MainActivity extends AppCompatActivity {
         ln_x = findViewById(R.id.ln_x);
 
         //Кнопка запуска вычислений
-        ITOG = findViewById(R.id.ravno);
+        ITOG = findViewById(R.id.equal);
     }
 
     private void ButtonSetText(){
         x_2.setText(Html.fromHtml(getString(R.string.x_2)));
         x_3.setText(Html.fromHtml(getString(R.string.x_3)));
         x_y.setText(Html.fromHtml(getString(R.string.x_y)));
-        koren_2x.setText(Html.fromHtml(getString(R.string.koren_2x)));
-        koren_3x.setText(Html.fromHtml(getString(R.string.koren_3x)));
+        koren_2x.setText(Html.fromHtml(getString(R.string.sqrt_2x)));
+        koren_3x.setText(Html.fromHtml(getString(R.string.sqrt_3x)));
         exp_x.setText(Html.fromHtml(getString(R.string.exp_x)));
 
         sin_x.setText(Html.fromHtml(getString(R.string.sin_x)));
@@ -130,8 +131,6 @@ public class MainActivity extends AppCompatActivity {
     private void SwitchFunc(){
         LL_1 = findViewById(R.id.LL_1);
         LL_2 = findViewById(R.id.LL_2);
-        LL_3 = findViewById(R.id.LL_3);
-        LL_4 = findViewById(R.id.LL_4);
 
         CompoundButton.OnCheckedChangeListener CheckedSwitch = new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -140,16 +139,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if (regim == 1){
                     LL_1.setVisibility(View.GONE);
-                    LL_2.setVisibility(View.GONE);
-                    LL_3.setVisibility(View.VISIBLE);
-                    LL_4.setVisibility(View.VISIBLE);
+                    LL_2.setVisibility(View.VISIBLE);
                     regim = 2;
                 }
                 else if (regim == 2){
-                    LL_3.setVisibility(View.GONE);
-                    LL_4.setVisibility(View.GONE);
                     LL_1.setVisibility(View.VISIBLE);
-                    LL_2.setVisibility(View.VISIBLE);
+                    LL_2.setVisibility(View.GONE);
                     regim = 1;
                 }
             }
